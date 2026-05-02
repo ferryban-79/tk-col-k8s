@@ -107,11 +107,50 @@ jobs:
       - name: 🔧 Configure rclone
         run: |
           mkdir -p ~/.config/rclone
-          # Encrypted config ko password se open karna[cite: 5]
+          # Encrypted config ko password se open karna
           openssl enc -d -aes-256-cbc -pbkdf2 -iter 600000 \
           -in rclone.conf.enc \
           -out ~/.config/rclone/rclone.conf \
           -pass pass:${{ secrets.RCLONE_CONFIG_PASSWORD }}
 
       - name: 🚀 Run Scraper (Worker ${{ matrix.chunk }})
-        run: python scraper-fixed.py  # Make sure file ka naam match karta ho[cite: 5]
+        run: python scraper-fixed.py
+
+      # ── FIX: Artifact Upload Steps ──
+      - name: Upload Node Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nodereport-${{ matrix.chunk }}
+          path: NodeReport_*.json
+          
+      - name: Upload Scraped Data ZIP (Artifact)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-artifact-chunk-${{ matrix.chunk }}
+          path: "*_artifact.zip"
+      # ────────────────────────────────────────
+
+# ─────────────────────────────────────────────────────────────
+# STEP 3: Summary Node (Compiles Master Ledger)
+# ─────────────────────────────────────────────────────────────
+  summary_job:
+    needs: scrape
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Download all Node Reports
+        uses: actions/download-artifact@v4
+        with:
+          path: ./reports
+          pattern: nodereport-*
+          merge-multiple: true
+
+      - name: Move reports to root
+        run: mv ./reports/*.json ./ || true
+
+      - name: Run Summary Reporter
+        run: python summary_reporter_tiktok.py
