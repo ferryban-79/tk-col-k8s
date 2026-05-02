@@ -1,0 +1,4 @@
+Timestamp,Node,Batch_Folder,Primary_Assigned_Acc,Final_Uploaded_Acc,Status,Files_Count
+2026-05-02 15:05:52,0,Batch--2026-05-02-Saturday_03-04-13-PM,tt_acc_0,tt_acc_0,SUCCESS,1
+2026-05-02 15:13:28,1,Batch--2026-05-02-Saturday_03-04-13-PM,tt_acc_1,tt_acc_1,SUCCESS,1
+2026-05-02 15:12:29,2,Batch--2026-05-02-Saturday_03-04-13-PM,tt_acc_2,tt_acc_2,SUCCESS,1
