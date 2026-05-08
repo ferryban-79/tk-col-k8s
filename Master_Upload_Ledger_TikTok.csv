@@ -69,3 +69,13 @@ Timestamp,Node,Batch_Folder,Primary_Assigned_Acc,Final_Uploaded_Acc,Status,Files
 2026-05-07 10:14:35,4,Batch--2026-05-07-Thursday_09-56-54-AM,tt_acc_4,tt_acc_4,SUCCESS,22
 2026-05-07 10:12:51,2,Batch--2026-05-07-Thursday_09-56-54-AM,tt_acc_2,tt_acc_2,SUCCESS,23
 2026-05-07 10:14:26,3,Batch--2026-05-07-Thursday_09-56-54-AM,tt_acc_3,tt_acc_3,SUCCESS,23
+2026-05-08 15:54:33,0,Batch--2026-05-08-Friday_03-36-51-PM,tt_acc_0,tt_acc_0,SUCCESS,46
+2026-05-08 15:54:01,5,Batch--2026-05-08-Friday_03-36-51-PM,tt_acc_5,tt_acc_5,SUCCESS,45
+2026-05-08 15:52:27,6,Batch--2026-05-08-Friday_03-36-51-PM,tt_acc_6,tt_acc_6,SUCCESS,45
+2026-05-08 15:55:02,9,Batch--2026-05-08-Friday_03-36-51-PM,tt_acc_9,tt_acc_9,SUCCESS,45
+2026-05-08 15:53:28,7,Batch--2026-05-08-Friday_03-36-51-PM,tt_acc_7,tt_acc_7,SUCCESS,45
+2026-05-08 15:57:57,8,Batch--2026-05-08-Friday_03-36-51-PM,tt_acc_8,tt_acc_8,SUCCESS,45
+2026-05-08 15:46:38,1,Batch--2026-05-08-Friday_03-36-51-PM,tt_acc_1,tt_acc_1,SUCCESS,46
+2026-05-08 15:45:01,4,Batch--2026-05-08-Friday_03-36-51-PM,tt_acc_4,tt_acc_4,SUCCESS,45
+2026-05-08 15:51:07,2,Batch--2026-05-08-Friday_03-36-51-PM,tt_acc_2,tt_acc_2,SUCCESS,46
+2026-05-08 15:51:22,3,Batch--2026-05-08-Friday_03-36-51-PM,tt_acc_3,tt_acc_3,SUCCESS,46
