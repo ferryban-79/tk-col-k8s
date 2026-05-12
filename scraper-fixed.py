@@ -42,7 +42,7 @@ CONFIG = {
     "comment_concurrency":    8,
     "max_comments_limit":     10000,
     "upload_concurrency":     1,    
-    "hard_link_limit":        17000,
+    "hard_link_limit":        99999999000,
 }
 
 _upload_sem: asyncio.Semaphore = None
