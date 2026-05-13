@@ -149,3 +149,6 @@ Timestamp,Node,Batch_Folder,Primary_Assigned_Acc,Final_Uploaded_Acc,Status,Files
 2026-05-12 15:43:33,2,Batch--2026-05-12-Tuesday_11-50-26-AM,tt_acc_2,tt_acc_2,SUCCESS,1045
 2026-05-12 15:16:37,15,Batch--2026-05-12-Tuesday_11-50-26-AM,tt_acc_15,tt_acc_15,SUCCESS,1047
 2026-05-12 15:50:01,3,Batch--2026-05-12-Tuesday_11-50-26-AM,tt_acc_3,tt_acc_3,SUCCESS,1043
+2026-05-13 00:43:57,0,Batch--2026-05-12-Tuesday_07-50-07-PM,tt_acc_0,tt_acc_0,SUCCESS,1030
+2026-05-13 00:42:25,1,Batch--2026-05-12-Tuesday_07-50-07-PM,tt_acc_1,tt_acc_1,SUCCESS,1033
+2026-05-13 00:47:59,4,Batch--2026-05-12-Tuesday_07-50-07-PM,tt_acc_4,tt_acc_4,SUCCESS,1030
